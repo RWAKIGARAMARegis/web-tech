@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUCA Student Admission Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #83a9d3;
+            color: #fff;
+            padding: 20px 250px; 
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold; 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7fa0c4; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Admission Form</h3>
+    </header>
+    <div class="container">
+        <form action="your_admission_script.php" method="post">
+            <ul>
+                <label for="Names">First name: </label>
+                <input type="text" name="name" placeholder="First name">
+            </ul>
+            <ul>
+                <label for="Names">Last name: </label>
+                <input type="text" name="name" placeholder="Last name">
+            </ul>
+            <ul>
+                <label for="NID">National ID/Passport: </label>
+                <input type="number" name="NID" placeholder="National ID/Passport">
+            </ul>
+            <ul>
+                <label for="email">Email: </label>
+                <input type="email" name="email" placeholder="Email">
+            </ul>
+            <ul>
+                <label for="Gender">Gender: </label>
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Male
+            </ul>
+            <ul>
+                <label for="DOB">Date of birth: </label>
+                <input type="date" name="DOB">
+            </ul>
+            <ul>
+                <label for="address">Address: </label>
+                <input type="text" name="address" placeholder="Address">
+            </ul>
+            <ul>
+                <label for="mothers name">Mother's name: </label>
+                <input type="text" name="mother's name" placeholder="Mother's name">
+            </ul>
+            <ul>
+                <label for="father name">Father's name: </label>
+                <input type="text" name="fateher" placeholder="Father's name">
+            </ul>
+            <ul>
+                <label for="guardin name">guardian parent's name: </label>
+                <input type="text" name="fateher" placeholder="guardian parent's name" >
+            </ul>
+            <ul>
+                <label for="status">Status: </label>
+                <input type="radio" name="status">Single
+                <input type="radio" name="status">Married
+                <input type="radio" name="status">Divorced
+            </ul>
+            <ul>
+                <label for="Faculty">Faculty: </label>
+                <select id="Faculty">
+                    <option selected>IT</option>
+                    <option selected>Business Administration</option>
+                    <option selected>Theology</option>
+                </select>
+            </ul>
+            <ul>
+                <label for="departments">Departments: </label>
+                <select id="departments">
+                    <option selected>Software Engineering</option>
+                    <option selected>Network & communication system</option>
+                    <option selected>Information management</option>
+                </select>
+            </ul>
+            <ul>
+                <label for="Campus">Campus: </label>
+                <input type="radio" name="Campus">Gishushu
+                <input type="radio" name="Campus">Masoro
+            </ul>
+            <ul>
+                <label for="Program">Program: </label>
+                <input type="checkbox" name="Campus">Day
+                <input type="checkbox" name="Campus">Evening
+            </ul>
+            <ul>
+                <label for="resume">Attach your resume letter</label>
+            </ul>
+            <ul>
+                <input type="file" name="resume">
+            </ul>
+            <br>
+            <br>
+            <ul align="middle">
+                <input type="submit" name="submit">
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

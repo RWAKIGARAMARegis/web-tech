@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AUCA LOGIN PAGE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9b9fda;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 1000px;
+            padding: 100px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            background-color: rgb(70, 19, 187);
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #faf6f6;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>LOGIN PAGE</h3>
+        <ul>
+            <label for="Email">Email: </label>
+            <input type="email" name="email" placeholder="Email">
+        </ul>
+        <ul>
+            <label for="Password">Password: </label>
+            <input type="password" name="password" placeholder="Password">
+        </ul>
+        <ul>
+            <input type="submit" name="login" value="Login">   
+        </ul>
+    </form>
+</body>
+</html>
